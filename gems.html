@@ -1,272 +1,45 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">   
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LA GRAND PLAZ - Dirección Estratégica</title>
+    <title>Asistente Virtual GEMS - LGP</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
-        /* ESTILOS ESENCIALES */
-        .text-lgp-dark { color: #1e3a8a; /* Azul Oscuro */ } 
-        .border-lgp-accent { border-color: #fcd34d; /* Amarillo */ }
-        .tab-button.active {
-            color: #1e3a8a !important; 
-            border-bottom: 2px solid #fcd34d !important; 
-        }
-        /* Estilo para el recuadro del Portal */
-        .portal-box {
-             background-color: #f3f4f6;
-             border-radius: 0.75rem;
-             padding: 2rem;
-             text-align: center;
-             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        .chat-container {
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
         }
     </style>
 </head>
-<body>
-    
-    <div class="contenedor-principal-de-la-pagina">
+<body class="bg-gray-50 flex items-center justify-center min-h-screen p-4">
+    <div class="chat-container bg-white">
         
-        <nav class="p-4 border-b border-gray-200">
-            <div class="max-w-7xl mx-auto flex justify-between items-center">
-                <span class="text-xl font-bold text-gray-800">LA GRAND PLAZ</span>
-                <div class="space-x-6 text-sm">
-                    <a href="#" class="text-gray-600 hover:text-gray-800">Misión/Visión</a>
-                    <a href="#" class="text-gray-600 hover:text-gray-800">Ejes Estratégicos</a>
-                    <a href="#" class="text-gray-600 hover:text-gray-800">Talento Humano</a>
-                    <a href="#" class="text-gray-600 hover:text-gray-800">Contacto</a>
-                </div>
+        <div class="bg-blue-900 text-white p-4 flex justify-between items-center">
+            <h2 class="text-xl font-bold">Asistente Virtual GEMS</h2>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M11.49 3.17c-.38-.21-.83-.34-1.28-.34s-.9.13-1.28.34L3 7.85l-.5.28c-.2.11-.3.26-.3.44v3.38c0 .18.1.33.3.44l.5.28 6.49 3.68c.38.21.83.34 1.28.34s.9-.13 1.28-.34l6.49-3.68.5-.28c.2-.11.3-.26.3-.44V8.57c0-.18-.1-.33-.3-.44l-.5-.28-6.49-3.68zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
+            </svg>
+        </div>
+        <p class="bg-blue-800 text-gray-200 text-xs p-1 text-center">Preguntas sobre Talento Humano y Alineación Estratégica.</p>
+        
+        <div class="p-4 h-80 overflow-y-auto space-y-4">
+            <div class="bg-gray-200 text-gray-800 p-3 rounded-lg max-w-xs self-start">
+                Hola, soy GEMS, su Asistente Virtual de Talento Humano en LA GRAND PLAZ. ¿En qué puedo ayudarle hoy? Puede preguntar sobre descriptivos de cargo, procesos de evaluación o políticas internas.
             </div>
-        </nav>
+            </div>
         
-        <div class="max-w-4xl mx-auto text-center py-20">
-            <h1 class="text-7xl font-extrabold text-gray-900 leading-none">Dirección Estratégica.</h1>
-            <h1 class="text-7xl font-extrabold text-yellow-500 mb-6 leading-none">LA GRAND PLAZ</h1>
-            <p class="text-xl text-gray-700 mb-10">Alineación, eficiencia y crecimiento sostenible para el periodo 2024-2025.</p>
-            <a href="#inicio-tabs" class="inline-block px-10 py-4 text-lg font-bold rounded-lg text-gray-900 bg-yellow-400 hover:bg-yellow-500 transition shadow-xl">
-                Ir a Información de Talento Humano
-            </a>
+        <div class="p-4 border-t border-gray-200 flex space-x-2">
+            <input type="text" placeholder="Escriba su pregunta..." class="flex-grow p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500">
+            <button class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-2 px-4 rounded-lg transition duration-150">
+                Enviar
+            </button>
         </div>
         
-        <div class="max-w-7xl mx-auto text-center py-10">
-            <h2 class="text-3xl font-serif font-bold text-gray-800 mb-8">Nuestra Identidad</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="p-6 border rounded-lg shadow-md">
-                    <h3 class="text-xl font-bold mb-2 text-yellow-500">Misión</h3>
-                    <p class="text-gray-600">Ser el líder en el mercado minorista, ofreciendo la mejor experiencia al cliente.</p>
-                </div>
-                <div class="p-6 border rounded-lg shadow-md">
-                    <h3 class="text-xl font-bold mb-2 text-purple-600">Visión</h3>
-                    <p class="text-gray-600">Expandir nuestra operación a nivel nacional, siendo un referente de calidad y servicio.</p>
-                </div>
-                <div class="p-6 border rounded-lg shadow-md">
-                    <h3 class="text-xl font-bold mb-2 text-blue-600">Ejes Estratégicos</h3>
-                    <ul class="list-disc list-inside text-gray-600 text-left mx-auto max-w-min">
-                        <li>Excelencia Operativa</li>
-                        <li>Cumplimiento y Control</li>
-                        <li>Desarrollo de Talento</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <hr id="inicio-tabs" class="my-10 border-gray-300 max-w-7xl mx-auto">
-        
-        <div class="max-w-7xl mx-auto p-4">
-            <div class="mb-4 border-b border-gray-200">
-                <div class="-mb-px flex space-x-4" aria-label="Tabs">
-                    <a href="#" class="tab-button inline-flex items-center justify-center py-2 px-4 border-b-2 font-medium text-sm leading-5 focus:outline-none transition duration-150 ease-in-out text-lgp-dark border-lgp-accent active"
-                        onclick="openTab(event, 'tab1')">
-                        Descriptivos y Alineación Estratégica
-                    </a>
-                    <a href="#" class="tab-button inline-flex items-center justify-center py-2 px-4 border-b-2 font-medium text-sm leading-5 focus:outline-none transition duration-150 ease-in-out text-gray-500 hover:text-lgp-dark hover:border-gray-300"
-                        onclick="openTab(event, 'tab2')">
-                        Talenteando en LGP: Asistente de Talento Humano
-                    </a>
-                </div>
-            </div>
-
-            <div id="tab1" class="tab-content p-2" style="display: block;">
-                <h3 class="text-2xl font-serif font-bold text-lgp-dark mb-4 border-b pb-2">Descriptivos y Alineación Estratégica</h3>
-                <div class="p-6 bg-white rounded-lg shadow mb-8">
-                    <h4 class="text-xl font-bold text-lgp-dark mb-3">🎯 Alineación Estratégica: Todos Remamos en la Misma Dirección</h4>
-                    <p class="text-sm text-gray-700 mb-4">
-                        En La Grand Plaz, cada área, cargo y actividad está conectada con los objetivos estratégicos de la empresa. Esto significa que:
-                    </p>
-                    <div class="overflow-x-auto">
-                        <table class="min-w-full divide-y divide-gray-200">
-                            <thead class="bg-lgp-dark">
-                                <tr>
-                                    <th scope="col" class="px-3 py-2 text-left text-xs font-medium text-white uppercase tracking-wider">Concepto</th>
-                                    <th scope="col" class="px-3 py-2 text-left text-xs font-medium text-white uppercase tracking-wider">Descripción</th>
-                                    <th scope="col" class="px-3 py-2 text-left text-xs font-medium text-white uppercase tracking-wider">Objetivo Estratégico que Apoya</th>
-                                </tr>
-                            </thead>
-                            <tbody class="bg-white divide-y divide-gray-200 text-sm">
-                                <tr>
-                                    <td class="px-3 py-2 whitespace-nowrap font-medium">Cargo: Analista Tesorería</td>
-                                    <td class="px-3 py-2 whitespace-nowrap">Ejecutar pagos y control de flujo de caja</td>
-                                    <td class="px-3 py-2 whitespace-nowrap">Excelencia Operativa</td>
-                                </tr>
-                                <tr>
-                                    <td class="px-3 py-2 whitespace-nowrap font-medium">Proceso: Gestión de pagos</td>
-                                    <td class="px-3 py-2 whitespace-nowrap">Flujo de pagos, validación, conciliaciones</td>
-                                    <td class="px-3 py-2 whitespace-nowrap">Excelencia Operativa</td>
-                                </tr>
-                                <tr>
-                                    <td class="px-3 py-2 whitespace-nowrap font-medium">Política: Manejo de caja</td>
-                                    <td class="px-3 py-2 whitespace-nowrap">Normas sobre ejecución de pagos y transferencias</td>
-                                    <td class="px-3 py-2 whitespace-nowrap">Cumplimiento y Control</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <div class="p-6 bg-gray-100 rounded-lg shadow">
-                    <h5 class="text-xl font-bold text-lgp-dark mb-3 flex items-center">📑 Documentos de Cargo</h5>
-                    <p class="text-sm text-gray-700 mb-4">
-                        Haz clic en "Descargar PDF" para acceder al perfil de cargo completo.
-                    </p>
-                    <ul class="space-y-3">
-                        <li class="flex items-center justify-between p-2 bg-white rounded-md border border-gray-200">
-                            <span class="text-sm font-medium text-gray-800">Analista de Tesorería</span>
-                            <a href="https://docs.google.com/document/d/1xvGfFjeRYNtveKZTL2f_o6GLXbPDhE8n/export?format=pdf" target="_blank" class="text-lgp-dark hover:text-lgp-accent text-sm font-semibold underline">Descargar PDF</a>
-                        </li>
-                        <li class="flex items-center justify-between p-2 bg-white rounded-md border border-gray-200">
-                            <span class="text-sm font-medium text-gray-800">Coordinador de Ventas</span>
-                            <a href="https://docs.google.com/document/d/1LbAgewU8CBSVx35os9lTkADPuOSPGytn/export?format=pdf" target="_blank" class="text-lgp-dark hover:text-lgp-accent text-sm font-semibold underline">Descargar PDF</a>
-                        </li>
-                        <li class="flex items-center justify-between p-2 bg-white rounded-md border border-gray-200">
-                            <span class="text-sm font-medium text-gray-800">Analista de Compras</span>
-                            <a href="https://docs.google.com/document/d/1mumPxp1UgZlNGGE5tjjvc4pZm4AERoJp/export?format=pdf" target="_blank" class="text-lgp-dark hover:text-lgp-accent text-sm font-semibold underline">Descargar PDF</a>
-                        </li>
-                        <li class="flex items-center justify-between p-2 bg-white rounded-md border border-gray-200">
-                            <span class="text-sm font-medium text-gray-800">Cajera</span>
-                            <a href="https://docs.google.com/document/d/1Vid3sQYiydPm1pz5iGT69r6c31yZ0gx-/export?format=pdf" target="_blank" class="text-lgp-dark hover:text-lgp-accent text-sm font-semibold underline">Descargar PDF</a>
-                        </li>
-                        <li class="flex items-center justify-between p-2 bg-white rounded-md border border-gray-200">
-                            <span class="text-sm font-medium text-gray-800">Contador</span>
-                            <a href="https://docs.google.com/document/d/1lOGvDsUAIy-RALt2ctdujXu8jLWZQGa5/export?format=pdf" target="_blank" class="text-lgp-dark hover:text-lgp-accent text-sm font-semibold underline">Descargar PDF</a>
-                        </li>
-                        <li class="flex items-center justify-between p-2 bg-white rounded-md border border-gray-200">
-                            <span class="text-sm font-medium text-gray-800">Gerente de Piso</span>
-                            <a href="https://docs.google.com/document/d/1PMk0B8PYlO5JJTA-ZPAr_lj2huWw_Lk5/export?format=pdf" target="_blank" class="text-lgp-dark hover:text-lgp-accent text-sm font-semibold underline">Descargar PDF</a>
-                        </li>
-                        <li class="flex items-center justify-between p-2 bg-white rounded-md border border-gray-200">
-                            <span class="text-sm font-medium text-gray-800">Almacenista</span>
-                            <a href="https://docs.google.com/document/d/1Gi4XEQSiREfUsOhJ193EBxqCIgOCnUUD/export?format=pdf" target="_blank" class="text-lgp-dark hover:text-lgp-accent text-sm font-semibold underline">Descargar PDF</a>
-                        </li>
-                        <li class="flex items-center justify-between p-2 bg-white rounded-md border border-gray-200">
-                            <span class="text-sm font-medium text-gray-800">Gerente de Administración</span>
-                            <a href="https://docs.google.com/document/d/1hYkll4E7magcAjFgL9kPTA6aEGu7XtnB/export?format=pdf" target="_blank" class="text-lgp-dark hover:text-lgp-accent text-sm font-semibold underline">Descargar PDF</a>
-                        </li>
-                        <li class="flex items-center justify-between p-2 bg-white rounded-md border border-gray-200">
-                            <span class="text-sm font-medium text-gray-800">Gerente de Almacén e Inventario</span>
-                            <a href="https://docs.google.com/document/d/1XKqFqssFAV8s_4m9HwzXSVp4McjSeoxz/export?format=pdf" target="_blank" class="text-lgp-dark hover:text-lgp-accent text-sm font-semibold underline">Descargar PDF</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div id="tab2" class="tab-content p-2" style="display: none;">
-                <h3 class="text-2xl font-serif font-bold text-lgp-dark mb-4 border-b pb-2">Talenteando en LGP: Asistente de Talento Humano</h3>
-                
-                <p class="text-gray-700 mb-6">
-                    Este espacio está dedicado a impulsar el **Desarrollo del Talento Humano** a través de una interacción rápida y eficiente. Aquí podrá resolver dudas sobre:
-                </p>
-                
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8 text-center">
-                    <div class="p-4 bg-gray-50 rounded-lg border-l-4 border-lgp-accent shadow-sm">🔍 **Dudas sobre cargos**</div>
-                    <div class="p-4 bg-gray-50 rounded-lg border-l-4 border-lgp-accent shadow-sm">📈 **Procesos de Evaluación**</div>
-                    <div class="p-4 bg-gray-50 rounded-lg border-l-4 border-lgp-accent shadow-sm">📜 **Políticas internas**</div>
-                </div>
-
-                <div class="portal-box mx-auto max-w-xl">
-                    <h4 class="text-2xl font-serif font-bold text-gray-900 mb-6">Portal de Servicios Directos</h4>
-                    
-                    <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdVP-GXDpJzV9pDwbXXvwQcvG4kLBlzTX1v35XuwNkJdAZ3mg/viewform?usp=dialog" 
-                            target="_blank" 
-                            class="inline-flex items-center justify-center px-8 py-3 text-lg font-bold rounded-full text-gray-900 bg-red-400 hover:bg-red-500 transition duration-300 shadow-xl transform hover:scale-105">
-                            Acceso a Recibos de Nómina 📜
-                        </a>
-                        
-                        <a href="./gems.html" 
-                            target="_blank" 
-                            class="inline-flex items-center justify-center px-8 py-3 text-lg font-bold rounded-full text-gray-900 bg-yellow-400 hover:bg-yellow-500 transition duration-300 shadow-xl transform hover:scale-105">
-                            Abrir Asistente Virtual GEMS ⚙️
-                        </a>
-                    </div>
-                    
-                    <p class="text-gray-600 mt-6 text-sm max-w-md mx-auto">
-                        Haga clic en el botón **"Abrir Asistente Virtual GEMS"** para acceder a la herramienta de Talento Humano en una nueva pestaña.
-                    </p>
-                </div>
-
-            </div>
-            </div>
     </div>
-    
-    <script>
-        function openTab(evt, tabName) {
-            var i, tabcontent, tablinks;
-
-            // Ocultar todo el contenido de las pestañas
-            tabcontent = document.getElementsByClassName("tab-content");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-
-            // Remover la clase 'active' de todos los botones de pestaña y aplicar estilo inactivo
-            tablinks = document.getElementsByClassName("tab-button");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].classList.remove("active");
-                tablinks[i].classList.remove("text-lgp-dark");
-                tablinks[i].classList.remove("border-lgp-accent");
-                tablinks[i].classList.add("text-gray-500");
-                tablinks[i].classList.add("hover:text-lgp-dark");
-                tablinks[i].classList.add("hover:border-gray-300");
-            }
-
-            // Mostrar el contenido de la pestaña actual
-            document.getElementById(tabName).style.display = "block";
-            
-            // Añadir la clase 'active' y los estilos de color al botón que fue clicado
-            evt.currentTarget.classList.add("active");
-            evt.currentTarget.classList.add("text-lgp-dark");
-            evt.currentTarget.classList.add("border-lgp-accent");
-            // Remover las clases de estilo inactivo del botón activo
-            evt.currentTarget.classList.remove("text-gray-500");
-            evt.currentTarget.classList.remove("hover:text-lgp-dark");
-            evt.currentTarget.classList.remove("hover:border-gray-300");
-        }
-
-        // Inicializar: Mostrar la primera pestaña (tab1) y activar su botón al cargar la página
-        document.addEventListener("DOMContentLoaded", function() {
-            // Aseguramos que solo la Pestaña 1 se muestre al inicio
-            var tabcontent = document.getElementsByClassName("tab-content");
-            for (var i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            
-            var defaultTab = document.getElementById("tab1");
-            var defaultButton = document.querySelector(".tab-button:first-child");
-
-            if (defaultTab) {
-                // Forzamos la visualización de la Pestaña 1
-                defaultTab.style.display = "block"; 
-            }
-            if (defaultButton) {
-                 // Establecer explícitamente las clases para el estado activo por defecto
-                 defaultButton.classList.add("active");
-                 defaultButton.classList.add("text-lgp-dark");
-                 defaultButton.classList.add("border-lgp-accent");
-                 defaultButton.classList.remove("text-gray-500");
-                 defaultButton.classList.remove("hover:text-lgp-dark");
-                 defaultButton.classList.remove("hover:border-gray-300");
-            }
-        });
-    </script>
-    
 </body>
 </html>
