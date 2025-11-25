@@ -6,6 +6,7 @@
     <title>Recibos de Nómina - LGP</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
+        /* Colores LGP de ejemplo (Azul Oscuro y Amarillo) */
         .text-lgp-dark { color: #1e3a8a; } 
         .bg-lgp-primary { background-color: #1e3a8a; } 
         .border-lgp-accent { border-color: #fcd34d; }
@@ -21,18 +22,17 @@
 
         <div class="space-y-6">
             
-            <div class="p-4 bg-blue-50 border border-blue-200 rounded-lg">
-                <p class="font-bold text-blue-800 flex items-center mb-2">
-                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path></svg>
-                    PASO 1: Descargar/Ver Recibo (Entrega Segura)
+            <div class="p-4 bg-gray-100 border border-gray-300 rounded-lg">
+                <p class="font-bold text-lgp-dark flex items-center mb-2">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zM8.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 11.586V6a1 1 0 10-2 0v5.586l-1.293-1.293z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
+                    PASO 1: Descargar/Ver Recibo (NUEVO PROCESO SEGURO)
                 </p>
-                <p class="text-sm text-gray-700 mb-4 font-bold text-red-700">
-                    ⚠️ **MÁXIMA PRIVACIDAD:** Al hacer clic, se abrirá la **función de BÚSQUEDA** dentro de la carpeta. Ingrese **SOLO SU NÚMERO DE CÉDULA** en la barra de búsqueda para acceder únicamente a su archivo.
+                <p class="text-sm text-gray-700 mb-4 font-bold text-lgp-dark">
+                    ⚠️ **IMPORTANTE:** Por motivos de **Máxima Seguridad y Privacidad** de datos, el acceso directo a la carpeta ha sido **restringido**.
                 </p>
-                <a href="https://drive.google.com/drive/u/0/search?q=type%3Apdf&zdsc=y&folder=1yfUcwwkcEJ8OAB7_1la4bnQxCMHUdW38" target="_blank"
-                    class="block w-full text-center py-3 rounded-lg font-semibold text-white bg-blue-600 hover:bg-blue-700 transition duration-300 shadow-md">
-                    🔍 Abrir Buscador de Recibos (Usar Cédula)
-                </a>
+                <p class="text-sm text-gray-700 mb-4">
+                    Para obtener su recibo de nómina individual, por favor envíe una solicitud a: **talentohumano@suempresa.com**. Su recibo le será enviado de forma privada por correo electrónico.
+                </p>
             </div>
 
             <div class="p-4 bg-red-50 border border-red-200 rounded-lg">
@@ -41,7 +41,7 @@
                     PASO 2: Confirmar Recepción (Soporte Legal)
                 </p>
                 <p class="text-sm text-gray-700 mb-4">
-                    **Una vez que haya descargado o revisado su recibo**, debe llenar este formulario de Google para dejar constancia legal de la recepción del documento.
+                    **Una vez que haya recibido y revisado su recibo**, debe llenar este formulario de Google para dejar constancia legal de la recepción del documento.
                 </p>
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSdVP-GXDpJzV9pDwbXXvwQcvG4kLBlzTX1v35XuwNkJdAZ3mg/viewform?usp=header" target="_blank"
                     class="block w-full text-center py-3 rounded-lg font-semibold text-white bg-red-700 hover:bg-red-800 transition duration-300 shadow-xl">
